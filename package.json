@@ -1,0 +1,8 @@
+{
+  "name": "app-console",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hrdtbs/app-console.git",
+  "author": "hrdtbs <harada.tsubasa.0422@gmail.com>",
+  "license": "MIT"
+}
