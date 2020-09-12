@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "git@github.com:hrdtbs/app-console.git",
   "author": "hrdtbs <harada.tsubasa.0422@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lit-element": "^2.4.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
