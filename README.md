@@ -7,3 +7,7 @@ A sample that uses LitElement to convert multiple React applications to Web Comp
 * Add a case using subtree
 * Add cases where environment variables are different for each app
 * Add a case using Vue etc.
+
+## Demo
+
+https://hrdtbs.github.io/app-console/
