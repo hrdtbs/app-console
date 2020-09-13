@@ -7,7 +7,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "lint:ts": "eslint \"*/**/*.{ts,tsx}\"",
+    "lint:json": "prettier '*.json'",
+    "format:ts": "yarn lint:ts --fix",
+    "format:json": "yarn lint:json --write"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.4.0",
@@ -27,7 +31,17 @@
     "@types/react-redux": "^7.1.9",
     "@types/react-router-dom": "^5.1.5",
     "@types/react-shadow-dom-retarget-events": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.20.6",
+    "eslint-plugin-react-hooks": "4.1.0",
+    "eslint-plugin-sort-imports-es6-autofix": "0.5.0",
     "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.1",
     "ts-lit-plugin": "^1.2.1",
     "typescript": "^4.0.2"
   }
