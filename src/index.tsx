@@ -23,13 +23,13 @@ const App = () => {
         <hr />
         <Switch>
           <Route exact path="/">
-            <hello-world></hello-world>
+            <hello-world />
           </Route>
           <Route path="/todo">
-            <todo-app></todo-app>
+            <todo-app />
           </Route>
           <Route path="/redux">
-            <redux-app></redux-app>
+            <redux-app />
           </Route>
         </Switch>
       </div>
