@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
+    "build:gh-pages":  "yarn build --public-url ./app-console",
     "lint:ts": "eslint \"*/**/*.{ts,tsx}\"",
     "lint:json": "prettier '*.json'",
     "format:ts": "yarn lint:ts --fix",
