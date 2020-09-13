@@ -1,6 +1,4 @@
-import React from "react"
+import React from "react";
 export default () => {
-    return (
-        <div>Hello, World</div>
-    )
-}
+  return <div>Hello, World</div>;
+};

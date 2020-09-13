@@ -1,21 +1,21 @@
-import { LitElement, customElement, html } from 'lit-element';
-import { render } from 'react-dom';
-import retargetEvent from 'react-shadow-dom-retarget-events';
-import { createElement } from 'react';
-import App from './App';
+import { LitElement, customElement, html } from "lit-element";
+import { createElement } from "react";
+import { render } from "react-dom";
+import App from "./App";
+import retargetEvent from "react-shadow-dom-retarget-events";
 
-@customElement('todo-app')
+@customElement("todo-app")
 export class ReactFrame extends LitElement {
   static formAssociated = true;
-  
+
   firstUpdated() {
-    const mount = this.shadowRoot?.querySelector('main');
+    const mount = this.shadowRoot?.querySelector("main");
 
     if (mount) {
       render(createElement(App), mount);
 
       this.dispatchEvent(
-        new CustomEvent('init', {
+        new CustomEvent("init", {
           detail: {
             width: mount.clientWidth,
             height: mount.clientHeight,
@@ -31,4 +31,3 @@ export class ReactFrame extends LitElement {
     return html`<main></main>`;
   }
 }
-

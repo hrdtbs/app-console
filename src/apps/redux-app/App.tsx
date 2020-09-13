@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { Provider } from "react-redux";
 import {
   decrement,
   increment,
-  incrementByAmount,
   incrementAsync,
+  incrementByAmount,
   selectCount,
 } from "./counterSlice";
-import { Provider } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import React, { useState } from "react";
 import store from "./store";
 
 const App = () => {

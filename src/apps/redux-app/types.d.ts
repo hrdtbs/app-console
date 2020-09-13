@@ -1,5 +1,5 @@
 declare namespace JSX {
   interface IntrinsicElements {
-    'redux-app': {}
+    "redux-app": {};
   }
 }

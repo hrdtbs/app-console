@@ -1,9 +1,9 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ReactDOM from "react-dom";
-import "./apps/todo-app";
 import "./apps/hello-world";
 import "./apps/redux-app";
+import "./apps/todo-app";
+import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 
 const App = () => {
   return (
