@@ -1,33 +1,6 @@
-import { LitElement, customElement, html } from "lit-element";
-import { createElement } from "react";
-import { render } from "react-dom";
+import { customElement } from "lit-element";
+import { rc2wc } from "../../rc2wc";
 import App from "./App";
-import retargetEvent from "react-shadow-dom-retarget-events";
 
 @customElement("todo-app")
-export class ReactFrame extends LitElement {
-  static formAssociated = true;
-
-  firstUpdated() {
-    const mount = this.shadowRoot?.querySelector("main");
-
-    if (mount) {
-      render(createElement(App), mount);
-
-      this.dispatchEvent(
-        new CustomEvent("init", {
-          detail: {
-            width: mount.clientWidth,
-            height: mount.clientHeight,
-          },
-        })
-      );
-
-      this.shadowRoot && retargetEvent(this.shadowRoot);
-    }
-  }
-
-  render() {
-    return html`<main></main>`;
-  }
-}
+export class ReactFrame extends rc2wc(App) {}
