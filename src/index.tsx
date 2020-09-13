@@ -7,7 +7,7 @@ import ReactDOM from "react-dom";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <ul>
           <li>
