@@ -14,10 +14,10 @@ const App = () => {
             <Link to="/">Hello, World</Link>
           </li>
           <li>
-            <Link to="/todo">Todo</Link>
+            <Link to="/todo">Emotion sample</Link>
           </li>
           <li>
-            <Link to="/redux">Redux</Link>
+            <Link to="/redux">Redux sample</Link>
           </li>
         </ul>
         <hr />
