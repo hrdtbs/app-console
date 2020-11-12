@@ -15,7 +15,7 @@
     "format:json": "yarn lint:json --write"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.35",
+    "@emotion/core": "^11.0.0",
     "@reduxjs/toolkit": "^1.4.0",
     "lit-element": "^2.4.0",
     "react": "^16.13.1",
